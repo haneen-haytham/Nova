@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>NOVA — Interior Design Studio</title>
+<meta name="description" content="NOVA is an interior design studio creating residential spaces designed around the way you live.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,400;0,9..144,500;0,9..144,600;1,9..144,400&family=Space+Grotesk:wght@300;400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="responsive.css">
+</head>
+<body>
+
+<a class="skip-link" href="#main">Skip to content</a>
+
+<!-- ============ HEADER / HERO ============ -->
+<header class="hero" id="hero">
+  <div class="hero__media" aria-hidden="true">
+    <img
+      src="Images/Hero.png"
+      alt=""
+      class="hero__img"
+      id="heroImg"
+    >
+    <div class="hero__scrim"></div>
+  </div>
+
+  <nav class="nav" id="siteNav">
+    <div class="nav__row">
+      <a href="#hero" class="nav__mark">NOVA</a>
+
+      <ul class="nav__links" id="navLinks">
+        <li><a href="#approach" class="nav__link" data-nav-link>Work</a></li>
+        <li><a href="#approach" class="nav__link" data-nav-link>Approach</a></li>
+        <li><a href="#why" class="nav__link" data-nav-link>Studio</a></li>
+        <li><a href="#consultation" class="nav__link" data-nav-link>Contact</a></li>
+      </ul>
+
+      <a href="#consultation" class="btn btn--ghost-light nav__cta">Start a Project</a>
+
+      <button class="nav__toggle" id="navToggle" aria-expanded="false" aria-controls="mobileMenu" aria-label="Open menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <div class="mobile-menu" id="mobileMenu" hidden>
+    <ul class="mobile-menu__links">
+      <li><a href="#approach" data-nav-link data-mobile-link>Work</a></li>
+      <li><a href="#approach" data-nav-link data-mobile-link>Approach</a></li>
+      <li><a href="#why" data-nav-link data-mobile-link>Studio</a></li>
+      <li><a href="#consultation" data-nav-link data-mobile-link>Contact</a></li>
+    </ul>
+    <a href="#consultation" class="btn btn--primary" data-mobile-link>Start a Project</a>
+  </div>
+
+  <div class="hero__content">
+    <p class="eyebrow">Interior Design Studio</p>
+    <h1 class="hero__headline">A home that feels<br>like yours.</h1>
+    <p class="hero__sub">Thoughtful interiors designed around your lifestyle, your space, and the way you actually live.</p>
+    <div class="hero__ctas">
+      <a href="#consultation" class="btn btn--primary">Book a Consultation</a>
+      <a href="#work" class="btn btn--ghost-light">Explore Our Work</a>
+    </div>
+  </div>
+
+  <a href="#approach" class="hero__scroll" aria-label="Scroll to next section">
+    <span class="hero__scroll-line"></span>
+  </a>
+</header>
+
+<main id="main">
+
+  <!-- ============ 02 — APPROACH ============ -->
+  <section class="approach" id="approach" aria-labelledby="approach-heading">
+    <div class="approach__inner">
+      <div class="approach__intro">
+        <span class="section-index">02</span>
+        <h2 class="approach__heading" id="approach-heading">Designed with<br>intention.</h2>
+        <p class="approach__text">
+          Every NOVA project follows the same disciplined process — one that
+          protects the idea from the first conversation through to the final
+          detail on site.
+        </p>
+      </div>
+
+      <ol class="approach__steps">
+        <li class="approach__step reveal">
+          <span class="approach__step-num">01</span>
+          <div class="approach__step-body">
+            <h3>Understand</h3>
+            <p>We learn how you live, what you need, and what matters to you.</p>
+          </div>
+        </li>
+        <li class="approach__step reveal">
+          <span class="approach__step-num">02</span>
+          <div class="approach__step-body">
+            <h3>Design</h3>
+            <p>We translate your needs into a considered visual direction.</p>
+          </div>
+        </li>
+        <li class="approach__step reveal">
+          <span class="approach__step-num">03</span>
+          <div class="approach__step-body">
+            <h3>Transform</h3>
+            <p>We bring the space to life through thoughtful materials, details, and execution.</p>
+          </div>
+        </li>
+      </ol>
+    </div>
+  </section>
+
+  <!-- ============ 03 — SELECTED WORK ============ -->
+  <section class="work" id="work" aria-labelledby="work-heading">
+    <div class="work__header">
+      <div>
+        <span class="section-index section-index--dark">03</span>
+        <h2 class="work__heading" id="work-heading">Selected work</h2>
+      </div>
+      <p class="work__intro">Spaces shaped by context, character, and the people who live in them.</p>
+    </div>
+
+    <div class="work__filters" role="group" aria-label="Filter projects by category">
+      <button class="filter-btn is-active" data-filter="all" aria-pressed="true">All</button>
+      <button class="filter-btn" data-filter="residential" aria-pressed="false">Residential</button>
+      <button class="filter-btn" data-filter="apartment" aria-pressed="false">Apartment</button>
+      <button class="filter-btn" data-filter="villa" aria-pressed="false">Villa</button>
+    </div>
+
+    <div class="work__grid" id="workGrid">
+      <article class="project project--large" data-category="residential" tabindex="0">
+        <div class="project__frame">
+          <img src="Images/work1.avif" alt="Living area of the Cairo Residence with a low sofa, warm wood paneling and layered natural light" loading="lazy">
+        </div>
+        <div class="project__meta">
+          <h3 class="project__title">Cairo Residence</h3>
+          <p class="project__tag">Modern Residential · 180m²</p>
+          <span class="project__link">View Project →</span>
+        </div>
+      </article>
+
+      <article class="project" data-category="apartment" tabindex="0">
+        <div class="project__frame">
+          <img src="Images/work2.avif" alt="Zamalek Apartment living room with contemporary furniture and city light" loading="lazy">
+        </div>
+        <div class="project__meta">
+          <h3 class="project__title">Zamalek Apartment</h3>
+          <p class="project__tag">Contemporary · 120m²</p>
+          <span class="project__link">View Project →</span>
+        </div>
+      </article>
+
+      <article class="project" data-category="villa" tabindex="0">
+        <div class="project__frame">
+          <img src="Images/work3.avif" alt="New Cairo Villa interior with warm minimalist furnishing and natural materials" loading="lazy">
+        </div>
+        <div class="project__meta">
+          <h3 class="project__title">New Cairo Villa</h3>
+          <p class="project__tag">Warm Minimalism · 320m²</p>
+          <span class="project__link">View Project →</span>
+        </div>
+      </article>
+    </div>
+  </section>
+
+  <!-- ============ 04 — BEFORE / AFTER ============ -->
+  <section class="transform" id="transform" aria-labelledby="transform-heading">
+    <div class="transform__header">
+      <span class="section-index">04</span>
+      <h2 class="transform__heading" id="transform-heading">From overlooked to intentional.</h2>
+    </div>
+
+    <div class="compare"
+         id="compareSlider"
+         role="slider"
+         aria-label="Drag to compare before and after"
+         aria-valuemin="0"
+         aria-valuemax="100"
+         aria-valuenow="50"
+         tabindex="0">
+      <div class="compare__image compare__image--before">
+        <img src="Images/before.avif" alt="Before: an underused, dated room with no clear layout">
+        <span class="compare__label compare__label--before">Before</span>
+      </div>
+      <div class="compare__image compare__image--after" id="compareAfter">
+        <img src="Images/after.avif" alt="After: the same room redesigned with intentional layout, materials and light">
+        <span class="compare__label compare__label--after">After</span>
+      </div>
+      <div class="compare__divider" id="compareDivider">
+        <div class="compare__handle" aria-hidden="true">
+          <span></span>
+        </div>
+      </div>
+    </div>
+
+    <p class="transform__caption">
+      This Maadi apartment's main living room had no real relationship between
+      seating, light, and storage. We opened the layout around a single axis,
+      replaced the flooring, and let one material — oak — carry the whole room.
+    </p>
+  </section>
+
+  <!-- ============ 05 — WHY NOVA + TESTIMONIAL ============ -->
+  <section class="why" id="why" aria-labelledby="why-heading">
+    <div class="why__grid">
+      <div class="why__principles">
+        <span class="section-index">05</span>
+        <h2 class="why__heading" id="why-heading">Beautiful spaces should work beautifully too.</h2>
+
+        <ul class="principles">
+          <li class="principle reveal">
+            <h3>Tailored, not templated</h3>
+            <p>Every space starts with the people who live in it.</p>
+          </li>
+          <li class="principle reveal">
+            <h3>Function before decoration</h3>
+            <p>A beautiful space should make everyday life easier.</p>
+          </li>
+          <li class="principle reveal">
+            <h3>Attention to every detail</h3>
+            <p>From the overall layout to the smallest finish.</p>
+          </li>
+        </ul>
+      </div>
+
+      <figure class="testimonial">
+        <blockquote>
+          <p>NOVA completely changed how we use our home. Every detail feels intentional, but nothing feels forced.</p>
+        </blockquote>
+        <figcaption>
+          <span class="testimonial__name">Mariam A.</span>
+          <span class="testimonial__project">Cairo Residence</span>
+        </figcaption>
+      </figure>
+    </div>
+  </section>
+
+  <!-- ============ 06 — CONSULTATION ============ -->
+  <section class="consultation" id="consultation" aria-labelledby="consultation-heading">
+    <div class="consultation__inner">
+      <div class="consultation__intro">
+        <span class="section-index section-index--light">06</span>
+        <h2 class="consultation__heading" id="consultation-heading">Let's design a space<br>that feels like you.</h2>
+        <p class="consultation__text">Tell us a little about your project and we'll get back to you within two business days.</p>
+      </div>
+
+      <div class="consultation__form-wrap">
+        <form class="form" id="consultForm" novalidate>
+
+          <div class="field">
+            <label for="fName">Name</label>
+            <input type="text" id="fName" name="name" autocomplete="name" required aria-describedby="err-name">
+            <span class="field__error" id="err-name" role="alert"></span>
+          </div>
+
+          <div class="field">
+            <label for="fEmail">Email</label>
+            <input type="email" id="fEmail" name="email" autocomplete="email" required aria-describedby="err-email">
+            <span class="field__error" id="err-email" role="alert"></span>
+          </div>
+
+          <div class="field">
+            <label for="fType">Project type</label>
+            <select id="fType" name="projectType" required aria-describedby="err-type">
+              <option value="" disabled selected>Select a project type</option>
+              <option value="apartment">Apartment</option>
+              <option value="residence">Residential home</option>
+              <option value="villa">Villa</option>
+              <option value="commercial">Commercial space</option>
+            </select>
+            <span class="field__error" id="err-type" role="alert"></span>
+          </div>
+
+          <div class="field">
+            <label for="fBudget">Estimated budget</label>
+            <select id="fBudget" name="budget" required aria-describedby="err-budget">
+              <option value="" disabled selected>Select a range</option>
+              <option value="under-300k">Under EGP 300,000</option>
+              <option value="300k-700k">EGP 300,000 – 700,000</option>
+              <option value="700k-1.5m">EGP 700,000 – 1,500,000</option>
+              <option value="1.5m-plus">EGP 1,500,000+</option>
+            </select>
+            <span class="field__error" id="err-budget" role="alert"></span>
+          </div>
+
+          <div class="field field--full">
+            <label for="fMessage">Tell us about your space</label>
+            <textarea id="fMessage" name="message" rows="4" required aria-describedby="err-message"></textarea>
+            <span class="field__error" id="err-message" role="alert"></span>
+          </div>
+
+          <div class="field field--full">
+            <button type="submit" class="btn btn--primary btn--wide">Request a Consultation</button>
+          </div>
+        </form>
+
+        <div class="form__success" id="formSuccess" hidden role="status">
+          <h3>Thank you. Your project is on its way to us.</h3>
+          <p>We'll be in touch within two business days.</p>
+        </div>
+      </div>
+    </div>
+
+    <footer class="footer">
+      <div class="footer__row">
+        <span class="footer__mark">NOVA</span>
+        <p class="footer__meta">Cairo, Egypt — interiors designed around the way you live.</p>
+        <p class="footer__copy">&copy; 2026 NOVA Interior Design Studio.</p>
+      </div>
+    </footer>
+  </section>
+
+</main>
+
+<script src="script.js"></script>
+</body>
+</html>
