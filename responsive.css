@@ -25,6 +25,9 @@
 
 /* Mobile nav switch */
 @media (max-width: 820px) {
+
+  .mobile-menu { display: none !important; }
+  
   .nav__links,
   .nav__cta {
     display: none;
@@ -42,6 +45,8 @@
 /* Mobile layout */
 @media (max-width: 680px) {
   :root { --gutter: 6vw; }
+
+  .mobile-menu { display: none !important; }
 
   .hero { min-height: 100svh; }
   .hero__content { padding-bottom: 72px; }
@@ -90,6 +95,9 @@
 
 /* Small phones */
 @media (max-width: 380px) {
+
+  .mobile-menu { display: none !important; }
+
   .hero__headline { font-size: 2.1rem; }
   .btn { padding: 14px 22px; }
 }
